@@ -19,7 +19,8 @@ podTemplate(cloud: 'kubernetes', label: 'kubernetes', yaml: template) {
         git branch: 'main', url: 'https://github.com/BekturUbykeev/jenkins-november-2024.git'
     }
     stage ("Deploy") {
-        sh "kubectl apply -f pod.yaml"
+        // sh "kubectl apply -f pod.yaml"
+      echo "Test"
     }
         }
     }
